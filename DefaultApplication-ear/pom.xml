@@ -78,7 +78,7 @@
                    		<configuration>
                         <tasks>
                            <!-- Using an ant task to unzip the database at the root of the EAR file for tWAS -->
-                           <unzip src="./src/main/resources/DefaultDB.zip" dest="/git/DefaultApplication-ear/target/DefaultApplication-ear.ear"/>
+                           <unzip src="./src/main/resources/DefaultDB.zip" dest="${project.build.directory}/DefaultApplication-ear.ear"/>
                         </tasks>
                       </configuration>
                       <goals>
